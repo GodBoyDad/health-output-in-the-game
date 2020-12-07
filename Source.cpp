@@ -7,22 +7,22 @@ int main()
 	setlocale(LC_ALL, "ru");
 	int level, clevel, hp;
 	hp = 100;
-	cout << "Показатель здоровья : " << hp << endl;
+	cout << "Health indicator: " << hp << endl;
 	level = 0;
-	cout << "Сделайте действие " << endl;
+	cout << "Do the action: " << endl;
 	cin >> clevel;
 
 	hp = 70;
 	if (level == clevel)
-		cout << "Идём дальше" << endl;
+		cout << "Move on: " << endl;
 	else if (level - clevel > 10)
-		cout << "Конец игры, перезагрузка" << endl;
+		cout << "End of game, restart..." << endl;
 
 	else if (level > clevel)
 
-		cout << "Столько остается здоровья после падения на колючки: " << hp << endl;
+		cout << "This is how much health remains after falling on thorns: " << hp << endl;
 
 	else
-		cout << "Вы перепрыгнули колючки " << endl;
+		cout << "You jumped over thorns " << endl;
 
 }
